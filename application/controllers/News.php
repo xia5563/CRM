@@ -5,7 +5,9 @@ class News extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('news_model');
+        $this->load->model('user_model');
         $this->load->helper('url_helper');
+        $this->load->library('session');
 
     }
 
@@ -55,6 +57,13 @@ class News extends CI_Controller{
             $this->news_model->set_news();
             $this->load->view('news/success');
         }
+    }
+
+    public function test(){
+        $data['test'] = 'abc';
+        $data['shuffle'] = $this->user_model->cx_shuffle($data['test']);
+        $data['unshuffle'] = $this->user_model->cx_unshuffle($data['shuffle']);
+        $this->load->view('news/test' , $data );
     }
 
 }

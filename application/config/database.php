@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'mysql:host=localhost;port=3306;dbname=testdb',
+	'dsn'	=> 'mysql:host=localhost;port=3306;dbname=crmdb',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'smart985963',
-	'database' => 'testdb',
+	'database' => 'crmdb',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
