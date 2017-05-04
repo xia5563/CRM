@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Please login.</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Chao Xia">
+    <title>LOGIN</title>
+    <?php $this->load->view("templates/meta")?>
 
-    <meta name="keywords" content="user login">
-    <meta name="description" content="">
-    <meta name="pageIndex" content="user_login">
-
-
+    <link rel="stylesheet" href="<?php echo BOOTSTRAP_CSS.'bootstrap.css'; ?>">
+    <link rel="stylesheet" href="<?php echo CSS.'style.css';?>">
 
 </head>
+
 <body>
-<?php
-if(isset($err_msg)) echo $err_msg ;
-?>
-<?php echo form_open('User_Controller/check_user'); ?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="wrapper">
+                <form class="form-signin" action="<?php echo site_url().'/User_Controller/check_user' ?>" method="post">
 
-<label for="username">User name: </label>
-<input type="input" name="username" /><br />
 
-<label for="password">Password: </label>
-<input type="password" name="password" /><br />
+                    <h2 class="form-signin-heading">Please Login</h2>
+                    <h3 class="form-signin-bse"> BS EDUCATION MELBOURNE</h3>
 
-<input type="submit" name="submit" value="Login" />
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="username" placeholder="username" required=""
+                                   autofocus=""/> <br>
 
-</form>
+
+                            <input type="password" class="form-control" name="password" placeholder="password"
+                                   required=""/>
+                            <label class="checkbox">
+                                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember
+                                me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+                            <br>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+
+                            <a class="login-link" href="#">Forgot password</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </form>
+
+    </div>
+</div>
+</div>
+</div>
 
 </body>
+</html>
