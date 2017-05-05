@@ -22,6 +22,10 @@ class User_Model extends CI_Model{
             return false;
         }
     }
+    public function viewUsers(){
+        $query = $this->db->get('users');
+        return $query->row_array();
+    }
     public function addUser($username, $pwd, $email){
         return $this->db->insert('users', array('username'=> $username, 'password'=>$pwd, 'email'=>$email));
     }

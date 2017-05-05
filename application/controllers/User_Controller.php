@@ -24,18 +24,23 @@ class User_Controller extends CI_Controller{
         }
     }
     public function add_user(){
-        $username_from_input = $this->input->post('username');
-        $pwd_from_input = $this->input->post('password');
-        $email_from_input = $this->input->post('email');
-        if($this->user_model->hasUser($username_from_input)){
-            echo "User already exits.";
-        }else{
-            $addUser = $this->user_model->addUser($username_from_input,$pwd_from_input,$email_from_input);
-            if($addUser){
-                echo "Add user successful.";
+        if($this->input->server('REQUEST_METHOD') == 'POST'){
+            $username_from_input = $this->input->post('username');
+            $pwd_from_input = $this->input->post('password');
+            $email_from_input = $this->input->post('email');
+
+            if($this->user_model->hasUser($username_from_input)){
+                echo "User already exits.";
             }else{
-                echo "Add user failed.";
+                $addUser = $this->user_model->addUser($username_from_input,$pwd_from_input,$email_from_input);
+                if($addUser){
+                    echo "Add user successful.";
+                }else{
+                    echo "Add user failed.";
+                }
             }
+        }else{
+            $this->load->view('pages/add_user');
         }
     }
 
