@@ -86,10 +86,11 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 
 //Chao defined the following.
-define('VIEWSFOLDER', 'application/views/');
-define('BOOTSTRAP', VIEWSFOLDER . 'lib/bootstrap-3.3.6-dist/');
+define('DEFAULTFOLDER', 'assets/');
+define('BOOTSTRAP', DEFAULTFOLDER . 'lib/bootstrap-3.3.6-dist/');
 define('BOOTSTRAP_CSS', BOOTSTRAP . 'css/');
 define('BOOTSTRAP_JS', BOOTSTRAP . 'js/');
-define('CSS', VIEWSFOLDER . 'css/');
-define('JS', VIEWSFOLDER . 'js/');
-define('FONTS', VIEWSFOLDER . 'fonts/');
+define('CSS', DEFAULTFOLDER . 'css/');
+define('JS', DEFAULTFOLDER . 'js/');
+define('IMG', DEFAULTFOLDER . 'img/');
+define('FONTS', DEFAULTFOLDER . 'fonts/');

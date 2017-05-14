@@ -5,7 +5,7 @@ class News extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('news_model');
-        $this->load->model('user_model');
+        $this->load->model('employeemodel');
         $this->load->helper('url_helper');
         $this->load->library('session');
 
