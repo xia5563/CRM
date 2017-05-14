@@ -1,0 +1,94 @@
+@mixin prefixed($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};  //Standard syntax.
+}
+@mixin prefixedValue($property, $value) {
+  #{$property}: -webkit-#{$value};
+  #{$property}: -moz-#{$value};
+  #{$property}: -ms-#{$value};
+  #{$property}: -o-#{$value};
+  #{$property}: #{$value};  //Standard syntax.
+}
+
+@mixin cx_title($bg_color:$colorE,$font_size:2rem,$padding:5px,$color:$colorGeneral){
+  font-weight:bold;
+  background-color: $bg_color;
+  font-size: $font_size;
+  padding: $padding;
+  color:$color;
+}
+@mixin sameColorBgGradient($color:$colorSuccessful, $darkenPercentage: 20%){
+  @include prefixedValue(background, linear-gradient($color, darken($color, $darkenPercentage)));
+}
+@mixin twoColorsBgGradient($colorA:$colorSuccessful,$colorB:darken($colorSuccessful, 20%)){
+  @include prefixedValue(background, linear-gradient($colorA, $colorB));
+}
+@mixin cx_btn_common_parts($display:inline-block,$bg_color:$colorSuccessful, $color:$colorGeneral,$p_top:5px,$p_left:10px) {
+  display: $display;
+  text-decoration: none;
+  text-align: center;
+  min-width: 100px;
+  background-color: $bg_color;
+  color: $color;
+  border:none;
+  padding:$p_top $p_left;
+  @include prefixed(transition, "color 0.5s, background-color 0.5s");
+  &:hover {
+    text-decoration: none;
+    color: $bg_color;
+    background-color: $color;
+  }
+}
+
+@mixin cx_form($color:$colorGeneral, $title_bg:$colorB){
+  background-color: $bgLighter;
+  .cx_form_title{
+    @include cx_title($title_bg,2rem,5px, $color);
+  }
+  .cx_form_content{
+    padding:5px;
+  }
+  .row{
+    margin-top:10px;
+    margin-bottom:20px;
+  }
+  .cx_input_title{
+    @include cx_title(inherit,1.5rem,5px,$color);
+  }
+  .cx_input{
+    $width:80%;
+    color: $colorGeneralDarkest;
+    width:$width;
+    @include prefixed(transition, "width 1s");
+    &:focus{
+      width: $width + 20%;
+    }
+  }
+  .cx_form_submit_footer{
+    text-align: center;
+    margin-top:50px;
+  }
+
+}
+
+@mixin cx_message_box($title_bg:$colorSuccessful, $content_bg:$bgLighter){
+  color:$colorGeneral;
+  .cx_message_title{
+    @include cx_title($title_bg);
+  }
+  .cx_message_content{
+    background-color: $content_bg;
+    font-size:1.2em;
+    padding:2px ;
+    min-height:200px;
+    position: relative;
+    .cx_message_content_btns{
+      position: absolute;
+      bottom:2px;
+    }
+  }
+}
+

@@ -1,0 +1,198 @@
+.cx_body{
+  background: $bgGeneral;
+}
+.cx_layout_margin{
+  margin-top:30px; margin-bottom:30px;
+}
+.cx_layout_margin_center{
+  margin:50px auto;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+  &:visited{
+    text-decoration: none;
+  }
+}
+.cx_span_animateA{
+  display: inline-block;
+  margin:-3px;
+  @include prefixed(transition, "transform  0.5s");
+  &:hover{
+    @include prefixed(transform, "translate(0, -5px)")
+  }
+}
+
+.cx_header{
+  color: $colorGeneral;
+  .cx_header_title{
+    font-size:4rem;
+  }
+  .cx_header_glyphicon{
+    font-size:8rem;
+  }
+  .cx_header_employee_info{
+    div{
+      min-height:25px;
+    }
+  }
+  .cx_link_btn{
+    width:15%;
+  }
+}
+
+.cx_navbar{
+  background-color: $bgLighter;
+  margin-top:5px;
+  margin-bottom:5px;
+  a{
+    color:$colorGeneral;
+  }
+  .navbar-toggle{
+    background-color: $colorSuccessful;
+    .icon-bar{
+      background-color: $colorGeneral;
+    }
+  }
+  .dropdown-menu{
+    background-color:$bgLighter;
+    width:100%;
+    a{
+      min-width:0; //override btn_common_parts
+    }
+  }
+  #cx_nav{
+    li{
+      margin:2px;
+      a{
+        padding:5px;
+      }
+    }
+  }
+}
+
+.cx_overview_boxes{
+  color:$colorGeneral;
+  h3{
+    padding-left:5px;
+  }
+  .cx_overview_box_row{
+    background-color: $bgLighter;
+  }
+  .cx_overview_box{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .cx_overview_box_title{
+      padding: 10px;
+      font-weight:bold;
+    }
+    .cx_overview_box_content{
+      position: relative;
+      min-height:250px;
+      background-color: $bgGeneral;
+      .cx_overview_box_content_num{
+        position: absolute;
+        right: 5px;
+        bottom:2px;
+        font-size:1.5em;
+      }
+    }
+  }
+  .cx_overview_box_customer{
+    .cx_overview_box_title{
+      background-color: $colorA;
+    }
+  }
+  .cx_overview_box_finance{
+    .cx_overview_box_title{
+      background-color: $colorB;
+    }
+  }
+  .cx_overview_box_employee{
+    .cx_overview_box_title{
+      background-color: $colorC;
+    }
+  }
+  .cx_overview_box_product{
+    .cx_overview_box_title{
+      background-color: $colorD;
+    }
+  }
+
+}
+
+.cx_function_boxes{
+  color:$colorGeneral;
+  .cx_function_box_row{
+    background-color: $bgLighter;
+  }
+  .cx_function_box{
+    margin-top:5px;
+    margin-bottom:5px;
+    .cx_function_box_title{
+      font-weight:bold;
+      padding:5px;
+    }
+    .cx_function_box_content{
+      position: relative;
+      min-height:250px;
+      background-color: $bgGeneral;
+      padding:5px;
+      .cx_function_box_img{
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      p{
+        padding:2px;
+        font-weight:bold;
+      }
+      div[class*="col-"] {
+        text-align: center;
+      }
+      [class*="cx_link_btn"]{
+        width:50%;
+      }
+      .cx_function_box_content_btns_bottom{
+        position: absolute;
+        right: 5px;
+        bottom:2px;
+        width:100%;
+      }
+    }
+  }
+  .cx_function_box_customer{
+    .cx_function_box_title{
+      background-color: $colorA;
+    }
+  }
+  .cx_function_box_finance{
+    .cx_function_box_title {
+      background-color: $colorB;
+    }
+  }
+  .cx_function_box_employee{
+    .cx_function_box_title {
+      background-color: $colorC;
+    }
+  }
+  .cx_function_box_product{
+    .cx_function_box_title {
+      background-color: $colorD;
+    }
+  }
+
+}
+
+.cx_message_box_successful{
+  @include cx_message_box();
+}
+.cx_message_box_failed{
+  @include cx_message_box($colorFailed);
+}
+
+
+
+

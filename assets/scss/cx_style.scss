@@ -1,0 +1,72 @@
+@import "variables";
+@import "mixins";
+@import "btn";
+@import "common_parts";
+@import "small_screen";
+@import "large_screen";
+
+.cx_loggin_container{
+  .cx_loggin{
+    text-align: center;
+    color:$colorGeneralDarker;
+    h1{
+      color: $colorGeneral;
+      margin-top:100px;margin-bottom:30px;
+    }
+    h3{
+      margin-bottom:50px;
+    }
+    .cx_formA{
+      width:30%;
+      margin-left:auto;margin-right:auto;
+      span{
+        font-size:1.3em;
+      }
+      input{
+        $width:100%;
+        width:$width;
+        min-width:120px;
+        border:none;
+        height:30px;
+        color:$colorGeneralDarkest;
+        @include prefixed(transition, "width 0.5s");
+        &:focus{
+          width:$width + 20%;
+        }
+      }
+      .cx_btn{
+        width:30%;
+        min-width:100px;
+        margin:auto;
+      }
+    }
+
+  }
+}
+
+.cx_form_add_employee{
+  @include cx_form($colorGeneral,$colorC);
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.cx_form_update_employee{
+  @include cx_form($colorGeneral,$colorB);
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.cx_show_employees{
+  color:$colorGeneral;
+  .cx_show_employees_title{
+    background-color: $colorE;
+  }
+  .row:not(.cx_show_employees_title){
+    background-color: $bgLighter;
+    margin-top:2px;
+    margin-bottom:2px;
+    padding-top: 5px;
+    padding-bottom:5px;
+  }
+}
+

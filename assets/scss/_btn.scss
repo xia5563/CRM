@@ -1,0 +1,32 @@
+.cx_btn {
+  @include cx_btn_common_parts(block);
+  font-weight: bold;
+}
+.cx_link_btn {
+  @include cx_btn_common_parts(block);
+}
+.cx_link_btn_inline, .cx_link_btn_overview {
+  @include cx_btn_common_parts();
+}
+
+.cx_link_btn_search, .cx_link_btn_customer {
+  @include cx_btn_common_parts(inline-block, $colorA);
+}
+.cx_link_btn_update, .cx_link_btn_finance {
+  @include cx_btn_common_parts(inline-block, $colorB);
+}
+.cx_link_btn_update_sm{
+  @include cx_btn_common_parts(inline-block,$colorB,$colorGeneral,0,0);
+}
+.cx_link_btn_add, .cx_link_btn_employee {
+  @include cx_btn_common_parts(inline-block, $colorC);
+}
+.cx_link_btn_delete, .cx_link_btn_product {
+  @include cx_btn_common_parts(inline-block, $colorD);
+}
+.cx_link_btn_delete_sm {
+  @include cx_btn_common_parts(inline-block, $colorD,$colorGeneral,0,0);
+}
+.cx_link_btn_view_all{
+  @include cx_btn_common_parts(inline-block, $colorE);
+}
