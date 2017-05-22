@@ -1,32 +1,31 @@
 .cx_btn {
   @include cx_btn_common_parts(block);
-  font-weight: bold;
 }
-.cx_link_btn {
+.cx_btn_link {
   @include cx_btn_common_parts(block);
 }
-.cx_link_btn_inline, .cx_link_btn_overview {
+.cx_btn_link_inline, .cx_btn_link_overview {
   @include cx_btn_common_parts();
 }
 
-.cx_link_btn_search, .cx_link_btn_customer {
+.cx_btn_link_search, .cx_btn_link_customer {
   @include cx_btn_common_parts(inline-block, $colorA);
 }
-.cx_link_btn_update, .cx_link_btn_finance {
+.cx_btn_link_update, .cx_btn_link_finance {
   @include cx_btn_common_parts(inline-block, $colorB);
 }
-.cx_link_btn_update_sm{
+.cx_btn_link_update_sm{
   @include cx_btn_common_parts(inline-block,$colorB,$colorGeneral,0,0);
 }
-.cx_link_btn_add, .cx_link_btn_employee {
+.cx_btn_link_add, .cx_btn_link_employee {
   @include cx_btn_common_parts(inline-block, $colorC);
 }
-.cx_link_btn_delete, .cx_link_btn_product {
+.cx_btn_link_delete, .cx_btn_link_product {
   @include cx_btn_common_parts(inline-block, $colorD);
 }
-.cx_link_btn_delete_sm {
+.cx_btn_link_delete_sm {
   @include cx_btn_common_parts(inline-block, $colorD,$colorGeneral,0,0);
 }
-.cx_link_btn_view_all{
+.cx_btn_link_view_all{
   @include cx_btn_common_parts(inline-block, $colorE);
 }

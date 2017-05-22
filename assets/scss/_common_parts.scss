@@ -38,7 +38,7 @@ a{
       min-height:25px;
     }
   }
-  .cx_link_btn{
+  .cx_btn_link{
     width:15%;
   }
 }
@@ -56,21 +56,26 @@ a{
       background-color: $colorGeneral;
     }
   }
-  .dropdown-menu{
-    background-color:$bgLighter;
-    width:100%;
-    a{
-      min-width:0; //override btn_common_parts
-    }
-  }
   #cx_nav{
     li{
-      margin:2px;
+      margin:0 2px;
       a{
         padding:5px;
       }
     }
   }
+  .dropdown-menu{
+    background-color:$bgLighter;
+    width:100%;
+    padding:2px 0px;
+    li{
+      margin:0;
+    }
+    a{
+      min-width:0; //override btn_common_parts
+    }
+  }
+
 }
 
 .cx_overview_boxes{
@@ -123,6 +128,7 @@ a{
 
 }
 
+//Styles for all the function boxes
 .cx_function_boxes{
   color:$colorGeneral;
   .cx_function_box_row{
@@ -140,44 +146,69 @@ a{
       min-height:250px;
       background-color: $bgGeneral;
       padding:5px;
+      .row{
+        margin-bottom:10px;
+      }
       .cx_function_box_img{
-        width:50%;
         margin-left:auto;
         margin-right:auto;
+        width:100%;
+        max-width:250px;
       }
-      p{
-        padding:2px;
-        font-weight:bold;
-      }
-      div[class*="col-"] {
+      .cx_function_box_content_btn_under_img{
         text-align: center;
       }
-      [class*="cx_link_btn"]{
-        width:50%;
+      select, input{
+        color: $colorSuccessful;
+        height:30px;
       }
-      .cx_function_box_content_btns_bottom{
-        position: absolute;
-        right: 5px;
-        bottom:2px;
-        width:100%;
+      span{
+        color:$colorGeneral;
+      }
+      [class*="cx_btn"]{
+        width:30%;
       }
     }
   }
+
+  //Styles for customer function box
   .cx_function_box_customer{
     .cx_function_box_title{
       background-color: $colorA;
     }
+    .cx_view_recent_col{
+      #view_recent_select{
+        width:100px;
+      }
+      #view_recent_input{
+        width:70px;
+      }
+    }
+    .cx_search_customers_row{
+      #search_customers_input{
+        width:100%;
+      }
+      #search_customers_select{
+        width:100%;
+      }
+    }
   }
+
+  //Styles for finance function box
   .cx_function_box_finance{
     .cx_function_box_title {
       background-color: $colorB;
     }
   }
+
+  //Styles for employee function box
   .cx_function_box_employee{
     .cx_function_box_title {
       background-color: $colorC;
     }
   }
+
+  //Styles for product function box
   .cx_function_box_product{
     .cx_function_box_title {
       background-color: $colorD;
@@ -193,6 +224,15 @@ a{
   @include cx_message_box($colorFailed);
 }
 
-
+.cx_solo_message{
+  background-color: $bgLighter;
+  color: $colorGeneral;
+  font-size:1.8rem;
+  font-style: italic;
+  margin-top:50px;
+  width:50%;
+  text-align: left;
+  padding:5px;
+}
 
 

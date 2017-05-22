@@ -12,9 +12,9 @@
 <div class="container cx_layout_margin_center ">
     <div class="row">
         <div class="col-md-12">
-            <div class="cx_form_add_employee">
+            <div class="cx_form_add">
                 <div class="cx_form_title">Add new employee</div>
-                <form class="cx_form_content" action="<?php echo site_url('Employee_Controller/add_employee') ;?>" method="post">
+                <form class="cx_form_content" action="<?php echo site_url('Employee/add_employee') ;?>" method="post">
                     <div class="row">
                         <div class="col-md-4">
                             <span class="cx_input_title">Employee name:</span>
@@ -57,10 +57,10 @@
                     </div>
                     <div class="row cx_form_submit_footer">
                         <div class="col-md-6 ">
-                            <button class="cx_link_btn_add" type="submit">Add</button>
+                            <button class="cx_btn_link_add" type="submit">Add</button>
                         </div>
                         <div class="col-md-6">
-                            <a href="<?php echo site_url('Employee_Controller/employee_login') ?>" class="cx_link_btn_inline">Cancel</a>
+                            <a href="<?php echo site_url('Employee/employee_login') ?>" class="cx_btn_link_inline">Cancel</a>
                         </div>
                     </div>
                 </form>

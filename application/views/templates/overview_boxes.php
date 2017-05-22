@@ -8,7 +8,7 @@
                 <div class="cx_overview_box_title">Customer Database</div>
                 <div class="cx_overview_box_content">
                     <div class="cx_overview_box_content_num">
-                        0
+                        <?php echo isset($count_customers)? $count_customers : "Unknown" ;?>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 <div class="cx_overview_box_title">Employee Database</div>
                 <div class="cx_overview_box_content">
                     <div class="cx_overview_box_content_num">
-                        <?php echo isset($count_employee)? $count_employee : "unknown";?>
+                        <?php echo isset($count_employees)? $count_employees : "Unknown";?>
                     </div>
                 </div>
             </div>

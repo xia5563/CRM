@@ -30,7 +30,8 @@
   display: $display;
   text-decoration: none;
   text-align: center;
-  min-width: 100px;
+  min-width:100px;
+  max-width:300px;
   background-color: $bg_color;
   color: $color;
   border:none;

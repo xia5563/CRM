@@ -9,8 +9,8 @@
 <body class="cx_body">
 <?php $this->load->view("templates/header") ?>
 <?php $this->load->view("templates/nav") ?>
-<div class="container cx_layout_margin_center cx_show_employees">
-    <div class="row cx_show_employees_title">
+<div class="container cx_layout_margin_center cx_show_multiple">
+    <div class="row cx_show_title">
         <div class="col-md-3">
              Employee name
         </div>
@@ -38,8 +38,8 @@
             </div>
 
             <div class="col-md-3">
-                <a href="<?php echo site_url('Employee_Controller/update_employee/' . $employee['username'])?>" class="cx_link_btn_update_sm">update</a>
-                <a href="<?php echo site_url('Employee_Controller/delete_employee/' . $employee['username']) ?>" class="cx_link_btn_delete_sm">delete</a>
+                <a href="<?php echo site_url('Employee/update_employee/' . $employee['username'])?>" class="cx_btn_link_update_sm">update</a>
+                <a href="<?php echo site_url('Employee/delete_employee/' . $employee['username']) ?>" class="cx_btn_link_delete_sm">delete</a>
             </div>
         </div>
     <?php endforeach; ?>

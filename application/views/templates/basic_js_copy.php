@@ -6,7 +6,7 @@ if(isset($jquery_ui) and  $jquery_ui == 'yes'  ) {
 ?>
 <script src="<?php echo base_url() . BOOTSTRAP_JS . 'bootstrap.js'?>"></script>
 <script type="text/javascript">
-    <!--    basa_url ends with splash, site_url does not. -->
+<!--    basa_url ends with splash, site_url does not. -->
     var base_url = "<?php echo base_url();?>" ;
     var site_url = "<?php echo site_url();?>" ;
 </script>

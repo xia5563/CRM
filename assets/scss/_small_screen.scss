@@ -6,5 +6,16 @@
       margin-right:auto;
     }
   }
+  .cx_function_boxes{
+    .cx_function_box_content{
+      [class*="col-"] {
+        text-align: center;
+        * {
+          margin-left:auto;
+          margin-right:auto;
+        }
+      }
 
+    }
+  }
 }

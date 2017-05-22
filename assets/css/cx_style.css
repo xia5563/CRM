@@ -3,6 +3,7 @@
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #333399;
   color: white;
   border: none;
@@ -11,18 +12,18 @@
   -moz-transition: color 0.5s, background-color 0.5s;
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
-  transition: color 0.5s, background-color 0.5s;
-  font-weight: bold; }
+  transition: color 0.5s, background-color 0.5s; }
   .cx_btn:hover {
     text-decoration: none;
     color: #333399;
     background-color: white; }
 
-.cx_link_btn {
+.cx_btn_link {
   display: block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #333399;
   color: white;
   border: none;
@@ -32,16 +33,17 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn:hover {
+  .cx_btn_link:hover {
     text-decoration: none;
     color: #333399;
     background-color: white; }
 
-.cx_link_btn_inline, .cx_link_btn_overview {
+.cx_btn_link_inline, .cx_btn_link_overview {
   display: inline-block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #333399;
   color: white;
   border: none;
@@ -51,16 +53,17 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn_inline:hover, .cx_link_btn_overview:hover {
+  .cx_btn_link_inline:hover, .cx_btn_link_overview:hover {
     text-decoration: none;
     color: #333399;
     background-color: white; }
 
-.cx_link_btn_search, .cx_link_btn_customer {
+.cx_btn_link_search, .cx_btn_link_customer {
   display: inline-block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #25565F;
   color: white;
   border: none;
@@ -70,16 +73,17 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn_search:hover, .cx_link_btn_customer:hover {
+  .cx_btn_link_search:hover, .cx_btn_link_customer:hover {
     text-decoration: none;
     color: #25565F;
     background-color: white; }
 
-.cx_link_btn_update, .cx_link_btn_finance {
+.cx_btn_link_update, .cx_btn_link_finance {
   display: inline-block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #395D3B;
   color: white;
   border: none;
@@ -89,16 +93,17 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn_update:hover, .cx_link_btn_finance:hover {
+  .cx_btn_link_update:hover, .cx_btn_link_finance:hover {
     text-decoration: none;
     color: #395D3B;
     background-color: white; }
 
-.cx_link_btn_update_sm {
+.cx_btn_link_update_sm {
   display: inline-block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #395D3B;
   color: white;
   border: none;
@@ -108,16 +113,17 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn_update_sm:hover {
+  .cx_btn_link_update_sm:hover {
     text-decoration: none;
     color: #395D3B;
     background-color: white; }
 
-.cx_link_btn_add, .cx_link_btn_employee {
+.cx_btn_link_add, .cx_btn_link_employee {
   display: inline-block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #55353F;
   color: white;
   border: none;
@@ -127,16 +133,17 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn_add:hover, .cx_link_btn_employee:hover {
+  .cx_btn_link_add:hover, .cx_btn_link_employee:hover {
     text-decoration: none;
     color: #55353F;
     background-color: white; }
 
-.cx_link_btn_delete, .cx_link_btn_product {
+.cx_btn_link_delete, .cx_btn_link_product {
   display: inline-block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #414141;
   color: white;
   border: none;
@@ -146,16 +153,17 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn_delete:hover, .cx_link_btn_product:hover {
+  .cx_btn_link_delete:hover, .cx_btn_link_product:hover {
     text-decoration: none;
     color: #414141;
     background-color: white; }
 
-.cx_link_btn_delete_sm {
+.cx_btn_link_delete_sm {
   display: inline-block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #414141;
   color: white;
   border: none;
@@ -165,16 +173,17 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn_delete_sm:hover {
+  .cx_btn_link_delete_sm:hover {
     text-decoration: none;
     color: #414141;
     background-color: white; }
 
-.cx_link_btn_view_all {
+.cx_btn_link_view_all {
   display: inline-block;
   text-decoration: none;
   text-align: center;
   min-width: 100px;
+  max-width: 300px;
   background-color: #4d004d;
   color: white;
   border: none;
@@ -184,7 +193,7 @@
   -ms-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
-  .cx_link_btn_view_all:hover {
+  .cx_btn_link_view_all:hover {
     text-decoration: none;
     color: #4d004d;
     background-color: white; }
@@ -229,7 +238,7 @@ a {
     font-size: 8rem; }
   .cx_header .cx_header_employee_info div {
     min-height: 25px; }
-  .cx_header .cx_link_btn {
+  .cx_header .cx_btn_link {
     width: 15%; }
 
 .cx_navbar {
@@ -242,15 +251,18 @@ a {
     background-color: #333399; }
     .cx_navbar .navbar-toggle .icon-bar {
       background-color: white; }
-  .cx_navbar .dropdown-menu {
-    background-color: rgba(211, 211, 211, 0.5);
-    width: 100%; }
-    .cx_navbar .dropdown-menu a {
-      min-width: 0; }
   .cx_navbar #cx_nav li {
-    margin: 2px; }
+    margin: 0 2px; }
     .cx_navbar #cx_nav li a {
       padding: 5px; }
+  .cx_navbar .dropdown-menu {
+    background-color: rgba(211, 211, 211, 0.5);
+    width: 100%;
+    padding: 2px 0px; }
+    .cx_navbar .dropdown-menu li {
+      margin: 0; }
+    .cx_navbar .dropdown-menu a {
+      min-width: 0; }
 
 .cx_overview_boxes {
   color: white; }
@@ -297,24 +309,32 @@ a {
       min-height: 250px;
       background-color: #262626;
       padding: 5px; }
+      .cx_function_boxes .cx_function_box .cx_function_box_content .row {
+        margin-bottom: 10px; }
       .cx_function_boxes .cx_function_box .cx_function_box_content .cx_function_box_img {
-        width: 50%;
         margin-left: auto;
-        margin-right: auto; }
-      .cx_function_boxes .cx_function_box .cx_function_box_content p {
-        padding: 2px;
-        font-weight: bold; }
-      .cx_function_boxes .cx_function_box .cx_function_box_content div[class*="col-"] {
+        margin-right: auto;
+        width: 100%;
+        max-width: 250px; }
+      .cx_function_boxes .cx_function_box .cx_function_box_content .cx_function_box_content_btn_under_img {
         text-align: center; }
-      .cx_function_boxes .cx_function_box .cx_function_box_content [class*="cx_link_btn"] {
-        width: 50%; }
-      .cx_function_boxes .cx_function_box .cx_function_box_content .cx_function_box_content_btns_bottom {
-        position: absolute;
-        right: 5px;
-        bottom: 2px;
-        width: 100%; }
+      .cx_function_boxes .cx_function_box .cx_function_box_content select, .cx_function_boxes .cx_function_box .cx_function_box_content input {
+        color: #333399;
+        height: 30px; }
+      .cx_function_boxes .cx_function_box .cx_function_box_content span {
+        color: white; }
+      .cx_function_boxes .cx_function_box .cx_function_box_content [class*="cx_btn"] {
+        width: 30%; }
   .cx_function_boxes .cx_function_box_customer .cx_function_box_title {
     background-color: #25565F; }
+  .cx_function_boxes .cx_function_box_customer .cx_view_recent_col #view_recent_select {
+    width: 100px; }
+  .cx_function_boxes .cx_function_box_customer .cx_view_recent_col #view_recent_input {
+    width: 70px; }
+  .cx_function_boxes .cx_function_box_customer .cx_search_customers_row #search_customers_input {
+    width: 100%; }
+  .cx_function_boxes .cx_function_box_customer .cx_search_customers_row #search_customers_select {
+    width: 100%; }
   .cx_function_boxes .cx_function_box_finance .cx_function_box_title {
     background-color: #395D3B; }
   .cx_function_boxes .cx_function_box_employee .cx_function_box_title {
@@ -358,11 +378,26 @@ a {
       position: absolute;
       bottom: 2px; }
 
+.cx_solo_message {
+  background-color: rgba(211, 211, 211, 0.5);
+  color: white;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-top: 50px;
+  width: 50%;
+  text-align: left;
+  padding: 5px; }
+
 @media only screen and (max-width: 991px) {
   .cx_overview_boxes .cx_overview_box {
     width: 90%;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .cx_function_boxes .cx_function_box_content [class*="col-"] {
+    text-align: center; }
+    .cx_function_boxes .cx_function_box_content [class*="col-"] * {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .cx_loggin_container .cx_loggin {
   text-align: center;
@@ -397,29 +432,29 @@ a {
       min-width: 100px;
       margin: auto; }
 
-.cx_form_add_employee {
+.cx_form_add {
   background-color: rgba(211, 211, 211, 0.5);
   width: 60%;
   margin-left: auto;
   margin-right: auto; }
-  .cx_form_add_employee .cx_form_title {
+  .cx_form_add .cx_form_title {
     font-weight: bold;
     background-color: #55353F;
     font-size: 2rem;
     padding: 5px;
     color: white; }
-  .cx_form_add_employee .cx_form_content {
+  .cx_form_add .cx_form_content {
     padding: 5px; }
-  .cx_form_add_employee .row {
+  .cx_form_add .row {
     margin-top: 10px;
     margin-bottom: 20px; }
-  .cx_form_add_employee .cx_input_title {
+  .cx_form_add .cx_input_title {
     font-weight: bold;
     background-color: inherit;
     font-size: 1.5rem;
     padding: 5px;
     color: white; }
-  .cx_form_add_employee .cx_input {
+  .cx_form_add .cx_input {
     color: black;
     width: 80%;
     -webkit-transition: width 1s;
@@ -427,35 +462,35 @@ a {
     -ms-transition: width 1s;
     -o-transition: width 1s;
     transition: width 1s; }
-    .cx_form_add_employee .cx_input:focus {
+    .cx_form_add .cx_input:focus {
       width: 100%; }
-  .cx_form_add_employee .cx_form_submit_footer {
+  .cx_form_add .cx_form_submit_footer {
     text-align: center;
     margin-top: 50px; }
 
-.cx_form_update_employee {
+.cx_form_update {
   background-color: rgba(211, 211, 211, 0.5);
   width: 60%;
   margin-left: auto;
   margin-right: auto; }
-  .cx_form_update_employee .cx_form_title {
+  .cx_form_update .cx_form_title {
     font-weight: bold;
     background-color: #395D3B;
     font-size: 2rem;
     padding: 5px;
     color: white; }
-  .cx_form_update_employee .cx_form_content {
+  .cx_form_update .cx_form_content {
     padding: 5px; }
-  .cx_form_update_employee .row {
+  .cx_form_update .row {
     margin-top: 10px;
     margin-bottom: 20px; }
-  .cx_form_update_employee .cx_input_title {
+  .cx_form_update .cx_input_title {
     font-weight: bold;
     background-color: inherit;
     font-size: 1.5rem;
     padding: 5px;
     color: white; }
-  .cx_form_update_employee .cx_input {
+  .cx_form_update .cx_input {
     color: black;
     width: 80%;
     -webkit-transition: width 1s;
@@ -463,17 +498,17 @@ a {
     -ms-transition: width 1s;
     -o-transition: width 1s;
     transition: width 1s; }
-    .cx_form_update_employee .cx_input:focus {
+    .cx_form_update .cx_input:focus {
       width: 100%; }
-  .cx_form_update_employee .cx_form_submit_footer {
+  .cx_form_update .cx_form_submit_footer {
     text-align: center;
     margin-top: 50px; }
 
-.cx_show_employees {
+.cx_show_multiple {
   color: white; }
-  .cx_show_employees .cx_show_employees_title {
+  .cx_show_multiple .cx_show_title {
     background-color: #4d004d; }
-  .cx_show_employees .row:not(.cx_show_employees_title) {
+  .cx_show_multiple .row:not(.cx_show_title) {
     background-color: rgba(211, 211, 211, 0.5);
     margin-top: 2px;
     margin-bottom: 2px;

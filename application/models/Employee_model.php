@@ -13,31 +13,30 @@ class Employee_model extends CI_Model{
             if($query->num_rows() > 0){
                 return $query->row_array();
             }else{
-                return false;
+                return null;
             }
         }else{
-            return false;
+            return null;
         }
     }
     public function hasEmployee($username=null){
         $result = $this->getEmployee($username);
         return empty($result) ? false: true;
     }
-    public function countEmployee(){
+    public function countEmployees(){
         return $this->db->count_all_results($this->tablename);
     }
     public function checkEmployee($username, $pwd){
         if(  isValid(array($username, $pwd)) ) {
-            $query = $this->db->get_where($this->tablename, array('username' => $username));
-            $result = $query->row_array();
-            if ($query->num_rows() > 0) {
-                if ($pwd == $result['password']) {
+            $result = $this->getEmployee($username);
+            if (empty($result)){
+                return false;
+            }else{
+                if($result['password'] == $pwd){
                     return $result;
-                } else {
+                }else{
                     return false;
                 }
-            } else {
-                return false;
             }
         } else {
             return false;

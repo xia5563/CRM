@@ -44,24 +44,24 @@
   }
 }
 
-.cx_form_add_employee{
+.cx_form_add{
   @include cx_form($colorGeneral,$colorC);
   width:60%;
   margin-left:auto;
   margin-right:auto;
 }
-.cx_form_update_employee{
+.cx_form_update{
   @include cx_form($colorGeneral,$colorB);
   width:60%;
   margin-left:auto;
   margin-right:auto;
 }
-.cx_show_employees{
+.cx_show_multiple{
   color:$colorGeneral;
-  .cx_show_employees_title{
+  .cx_show_title{
     background-color: $colorE;
   }
-  .row:not(.cx_show_employees_title){
+  .row:not(.cx_show_title){
     background-color: $bgLighter;
     margin-top:2px;
     margin-bottom:2px;
@@ -69,4 +69,6 @@
     padding-bottom:5px;
   }
 }
+
+
 

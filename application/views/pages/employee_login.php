@@ -38,13 +38,13 @@
                 <span class="cx_span_animateA">n</span>
                 <span class="cx_span_animateA">e</span>
             </h3>
-            <form class="cx_formA "  action="<?php echo site_url('Employee_Controller/employee_login')?>" method="post">
+            <form class="cx_formA "  action="<?php echo site_url('Employee/employee_login')?>" method="post">
                 <div class="row cx_layout_margin">
                     <div class="col-md-5">
                         <span  >User name:</span>
                     </div>
                     <div class="col-md-7">
-                        <input type="text" name="username">
+                        <input type="text" name="username" class="cx_validate_normal">
                     </div>
                 </div>
                <div class="row cx_layout_margin">
