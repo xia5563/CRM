@@ -7,6 +7,11 @@
 .cx_layout_margin_center{
   margin:50px auto;
 }
+.cx_layout_group_a{
+  border:1px solid $bgLightest;
+  margin-bottom:20px;
+  padding:5px;
+}
 a{
   text-decoration: none;
   &:hover{
@@ -147,7 +152,7 @@ a{
       background-color: $bgGeneral;
       padding:5px;
       .row{
-        margin-bottom:10px;
+        margin-bottom:5px;
       }
       .cx_function_box_img{
         margin-left:auto;
@@ -165,9 +170,6 @@ a{
       span{
         color:$colorGeneral;
       }
-      [class*="cx_btn"]{
-        width:30%;
-      }
     }
   }
 
@@ -184,11 +186,11 @@ a{
         width:70px;
       }
     }
-    .cx_search_customers_row{
-      #search_customers_input{
+    .cx_search_customer_row{
+      #search_customer_input{
         width:100%;
       }
-      #search_customers_select{
+      #search_customer_select{
         width:100%;
       }
     }
@@ -225,14 +227,23 @@ a{
 }
 
 .cx_solo_message{
-  background-color: $bgLighter;
-  color: $colorGeneral;
   font-size:1.8rem;
   font-style: italic;
   margin-top:50px;
-  width:50%;
-  text-align: left;
+  max-width:50%;
   padding:5px;
+  span{
+    padding:5px;
+    background-color: $bgLighter;
+    color: $colorGeneral;
+  }
+}
+.cx_solo_message_center{
+  @extend .cx_solo_message;
+  max-width:70%;
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 

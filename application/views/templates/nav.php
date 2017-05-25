@@ -13,7 +13,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle cx_btn_link_customer" data-toggle="dropdown">Customer</a>
                     <ul class="dropdown-menu">
-                        <li><a href="<?php echo site_url('Customer/view_customers')?>"
+                        <li><a href="<?php echo site_url('Customer/view_all_customers')?>"
                                class="cx_btn_link_view_all">View all</a> </li>
                         <li><a href="<?php echo site_url('Customer/add_customer')?>"
                                class="cx_btn_link_add">Add</a> </li>

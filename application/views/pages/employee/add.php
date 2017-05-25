@@ -20,7 +20,7 @@
                             <span class="cx_input_title">Employee name:</span>
                         </div>
                         <div class="col-md-8">
-                            <input type="text" class="cx_input" name="username">
+                            <input type="text" class="cx_input" name="employee_name">
                         </div>
                     </div>
                     <div class="row">

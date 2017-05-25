@@ -1,5 +1,7 @@
 $bgGeneral: #262626; //rgb(38,38,38)
 $bgLighter: rgba(211,211,211,0.5);
+$bgLightest:rgba(153, 102, 51,0.2);
+$bgA:#001a33;
 $colorGeneral:white;
 $colorGeneralDarker:darken($colorGeneral, 10%);
 $colorGeneralDarkest:black;
@@ -8,5 +10,6 @@ $colorB:#395D3B;
 $colorC:#55353F;
 $colorD:#414141;
 $colorE:#4d004d;
+$colorF:#193366;
 $colorSuccessful:#333399;
 $colorFailed:#ff5050;

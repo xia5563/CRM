@@ -30,7 +30,7 @@
   display: $display;
   text-decoration: none;
   text-align: center;
-  min-width:100px;
+  min-width:80px;
   max-width:300px;
   background-color: $bg_color;
   color: $color;
@@ -46,15 +46,19 @@
 
 @mixin cx_form($color:$colorGeneral, $title_bg:$colorB){
   background-color: $bgLighter;
+  span{
+    color: $color;
+  }
   .cx_form_title{
     @include cx_title($title_bg,2rem,5px, $color);
   }
   .cx_form_content{
     padding:5px;
   }
-  .row{
-    margin-top:10px;
-    margin-bottom:20px;
+  .row:not(.cx_form_submit_footer){
+    background-color: $bgA;
+    margin:10px auto ;
+    padding:10px 2px;
   }
   .cx_input_title{
     @include cx_title(inherit,1.5rem,5px,$color);
@@ -70,7 +74,7 @@
   }
   .cx_form_submit_footer{
     text-align: center;
-    margin-top:50px;
+    margin-top:20px;
   }
 
 }

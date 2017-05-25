@@ -43,7 +43,12 @@
 
   }
 }
-
+.cx_form_view{
+  @include cx_form($colorGeneral,$colorE);
+  width:60%;
+  margin-left: auto;
+  margin-right:auto;
+}
 .cx_form_add{
   @include cx_form($colorGeneral,$colorC);
   width:60%;
@@ -58,6 +63,7 @@
 }
 .cx_show_multiple{
   color:$colorGeneral;
+  width:97%;
   .cx_show_title{
     background-color: $colorE;
   }
@@ -69,6 +75,7 @@
     padding-bottom:5px;
   }
 }
+
 
 
 

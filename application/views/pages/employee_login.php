@@ -44,7 +44,7 @@
                         <span  >User name:</span>
                     </div>
                     <div class="col-md-7">
-                        <input type="text" name="username" class="cx_validate_normal">
+                        <input type="text" name="employee_name" ">
                     </div>
                 </div>
                <div class="row cx_layout_margin">

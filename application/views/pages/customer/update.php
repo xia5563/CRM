@@ -20,7 +20,7 @@
                             <span class="cx_input_title">Customer name:</span>
                         </div>
                         <div class="col-md-8">
-                            <input type="hidden" name="username" value="<?php echo $customer['customer_name'];?>">
+                            <input type="hidden" name="employee_name" value="<?php echo $customer['customer_name'];?>">
                             <span class="cx_input_title"><?php echo $customer['customer_name'];?></span>
                         </div>
                     </div>

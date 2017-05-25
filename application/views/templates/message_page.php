@@ -17,12 +17,16 @@
             <div class="cx_message_content">
                 <?php echo isset($msg_content)? ucfirst($msg_content) : "Unknown" ?>
                 <div class="cx_message_content_btns">
-                    <?php if(isset($msg_btn_one) && strlen($msg_btn_one) > 0 ) {
-                        echo "<a href='" . site_url($msg_btn_one) ."' class='cx_btn_link_inline'>" . $msg_btn_one_text . "</a>";
+                    <?php if(isset($msg_btn1) && strlen($msg_btn1) > 0 ) {
+                        echo "<a href='" . site_url($msg_btn1) ."' class='cx_btn_link_inline'>" . $msg_btn1_text . "</a>";
                     }?>
 
-                    <?php if(isset($msg_btn_two) && strlen($msg_btn_two) > 0 ) {
-                        echo "<a href='" . site_url($msg_btn_two) ."' class='cx_btn_link_inline'>" . $msg_btn_two_text . "</a>";
+                    <?php if(isset($msg_btn2) && strlen($msg_btn2) > 0 ) {
+                        echo "<a href='" . site_url($msg_btn2) ."' class='cx_btn_link_inline'>" . $msg_btn2_text . "</a>";
+                    }?>
+
+                    <?php if(isset($msg_btn3) && strlen($msg_btn3) > 0 ) {
+                        echo "<a href='" . site_url($msg_btn3) ."' class='cx_btn_link_inline'>" . $msg_btn3_text . "</a>";
                     }?>
                </div>
             </div>

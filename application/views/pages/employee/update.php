@@ -20,8 +20,8 @@
                             <span class="cx_input_title">Employee name:</span>
                         </div>
                         <div class="col-md-8">
-                            <input type="hidden" name="username" value="<?php echo $employee['username'];?>">
-                            <span class="cx_input_title"><?php echo $employee['username'];?></span>
+                            <input type="hidden" name="employee_name" value="<?php echo $employee['employee_name'];?>">
+                            <span class="cx_input_title"><?php echo $employee['employee_name'];?></span>
                         </div>
                     </div>
                     <div class="row">

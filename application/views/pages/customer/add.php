@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <div class="cx_form_add">
                 <div class="cx_form_title">Add new customer</div>
-                <form class="cx_form_content" action="<?php echo site_url('Employee/add_customer') ;?>" method="post">
+                <form class="cx_form_content" action="<?php echo site_url('Customer/add_customer') ;?>" method="post">
                     <div class="row">
                         <div class="col-md-4">
                             <span class="cx_input_title">Customer name:</span>

@@ -1,6 +1,10 @@
 $(document).ready(function() {
-    view_recent_btn_click();
-    search_customers_btn_click();
+    cx_standard_search($("#view_recent_btn"), $("#view_recent_input"),
+        $("#view_recent_select"),  "/Customer/view_recent_customer/");
+    cx_standard_search($("#search_customer_btn"), $("#search_customer_input"),
+        $("#search_customer_select"), "/Customer/search_customer/");
+    cx_standard_search($("#search_employee_btn"),  $("#search_employee_input"),
+        $("#search_employee_select"), "/Employee/search_employee/");
 });
 
 //Group of functions
@@ -18,26 +22,24 @@ function are_symbols_illegal(str){
     var pattern = "/[^\w\s\.@#]/g";  //Legal symbols are: Any alphabet, space, ".", "@", "#"
     return pattern.test(str);
 }
-function view_recent_btn_click(){
-    var btn = $("#view_recent_btn");
+
+function cx_standard_search(btn, input, select, url_part){
     if(btn.length == 0) {return;} //Ignore following if non-exist.
     btn.on("click",function(){
-        var selectVal = $("#view_recent_select").val();
-        var inputVal = $("#view_recent_input").val();
-        window.location.href = site_url + "/Customer/view_customers/" + selectVal + "/" + inputVal;
+        cx_search(input, select, url_part);
+    });
+    input.on("keypress", function(event) {
+        //When user press "Enter" key
+        if(event.which==13){
+            cx_search($(this), select, url_part);
+        }
     });
 }
-function search_customers_btn_click(){
-    var btn = $("#search_customers_btn");
-    if(btn.length == 0) {return;} //Ignore following if non-exist.
-    btn.on("click",function(){
-        var selectVal = $("#search_customers_select").val();
-        var selectText = $("#search_customers_select option:checked").text();
-        var inputVal = $("#search_customers_input").val();
-        var url = site_url + "/Customer/search_customers/" + selectVal + "/" + inputVal +"/" + selectText ;
-        url = rm_rp_spaces(url);
-        alert(url);
-        window.location.href = url;
-    })
+function cx_search(input,select,url_part){
+    var inputVal = input.length > 0 ? input.val() : "";
+    var selectVal = select.val();
+    var selectText = select.find("option:checked").text();
+    var url = site_url + url_part + selectVal + "/" + selectText +"/" + inputVal ;
+    url = rm_rp_spaces(url);
+    window.location.href = url;
 }
-

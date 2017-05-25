@@ -1,29 +1,27 @@
 <?php
-class Customer_model extends CI_Model{
-    public $tablename = 'customers';
+
+class Customer_model extends Common_model
+{
     public function __construct()
     {
         parent::__construct();
-        $this->load->database();
-        $this->load->helper(array('cx_functions'));
     }
-    public function countCustomers(){
-        return $this->db->count_all_results($this->tablename);
+
+    public $tablename = 'customers';
+
+    public function viewCustomers($field, $days)
+    {
+        $query = $this->db->where('DATEDIFF(CURDATE(),' . $field . ') < ' . $days)->get($this->tablename);
+        return $query;
     }
-    public function viewCustomers($category, $days){
-        if(isValid(array($category))){
-            $query = $this->db->where('DATEDIFF(CURDATE(),'. $category .') < '. $days)->get($this->tablename);
-            return   $query;
-        }else{
-            return  $this->db->get($this->tablename);
-        }
+
+    public function addCustomer($customer_name, $email, $mobile_phone = null, $py_enquiry_date = null,
+                                $pte_enquiry_date = null, $rpl_enquiry_date = null)
+    {
+        $this->db->insert($this->tablename, array('customer_name' => $customer_name, 'email' => $email,
+            'mobile_phone' => $mobile_phone, 'py_enquiry_date' => $py_enquiry_date,
+            'pte_enquiry_date' => $pte_enquiry_date, 'rpl_enquiry_date' => $rpl_enquiry_date));
+        return $this->db->affected_rows();
     }
-    public function getCustomers($field,$keywords=null){
-        if(isValid(array($field,$keywords))){
-            $query = $this->db->like($field, $keywords)->get($this->tablename);
-            return $query;
-        }else{
-            return null;
-        }
-    }
+
 }

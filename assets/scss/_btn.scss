@@ -29,3 +29,9 @@
 .cx_btn_link_view_all{
   @include cx_btn_common_parts(inline-block, $colorE);
 }
+.cx_btn_link_view_sm{
+  @include cx_btn_common_parts(inline-block, $colorE,$colorGeneral,0,0);
+}
+.cx_btn_link_add_csv{
+  @include cx_btn_common_parts(inline-block,$colorF);
+}
