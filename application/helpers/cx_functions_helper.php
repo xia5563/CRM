@@ -1,6 +1,8 @@
 <?php
 //This is where global functions are.
 //Author: Chao Xia.
+//The following are global functions. They are valid for all controllers and models.
+//If you wanna something just for all models, see the Common_model.
 
 function isValid($arr){
     if(isset($arr)){
@@ -34,13 +36,12 @@ function show_message($obj,$msg_type,$msg_content,$msg_btn1=null,$msg_btn1_text=
     $obj->load->view("templates/message_page", $data);
 }
 function show_message_invalid_input($obj){
-    show_message($obj,'failed','Please make sure your input is correct',
-        'Employee/employee_login', 'Back to overview');
+    show_message($obj,'failed','Please make sure your input is correct');
 }
 function show_message_no_result_found($obj){
-    show_message($obj,'failed','No result found',
-        'Employee/employee_login','Back to overview');
+    show_message($obj,'failed','No result found');
 }
+
 function is_form_posted(){
     return $_SERVER['REQUEST_METHOD'] == 'POST';
 }
@@ -55,6 +56,64 @@ function auth_employee(){
         redirect(site_url('Employee'));
     }
 }
+
+function view_one($obj, $model, $k, $element){
+    if(isValid(array($k))){
+        $query = $obj->$model->fetch($obj->pk,$k);
+        if($query->num_rows()>0){
+            $data['num_rows'] = $query->num_rows();
+            $data['title_message'] = "Show detail information for $element: \"$k\" ";
+            $data[$element] = $query->row_array();
+            $obj->load->view("pages/$element/view", $data);
+        }else{
+            show_message_no_result_found($obj);
+        }
+    }else{
+        show_message_invalid_input($obj);
+    }
+}
+function view_all($obj,$model,$element){
+    $dataset = $obj->$model->fetchAll();
+    $data['num_rows'] = $dataset->num_rows();
+    $data['title_message'] = "Show all {$element}s, {$data['num_rows']} found.";
+    $data[$element.'s'] = $dataset->result_array();
+    $obj->load->view("pages/$element/view_all", $data);
+}
+function cx_search($obj,$model,$element,$field,$text,$keyword){
+    $text = strtolower(cx_decodeURL($text));
+    $keyword = cx_decodeURL($keyword);
+    if(isValid(array($keyword))){
+        $query = $obj->$model->searchTable($field,$keyword);
+        if($query->num_rows()==0){
+            $data['num_rows'] = 0;
+        }else{
+            $data['num_rows'] = $query->num_rows();
+        }
+        $data['title_message'] = "Search $text for \"$keyword\"  :  {$data['num_rows']}   found.";
+        $data[$element.'s'] = $query->result_array();
+        $obj->load->view("pages/$element/view_all", $data);
+    }else{
+        show_message_invalid_input($obj);
+    }
+}
+function delete_one($obj,$model,$k){
+    if (isValid(array($k))) {
+        $num_deleted_rows = $obj->$model->deleteOne($obj->pk, $k);
+        if ($num_deleted_rows > 0) {
+            show_message($obj,
+                "successful",
+                "Delete successful."
+                );
+        } else {
+            show_message($obj,
+                "failed",
+                "Failed to delete");
+        }
+    } else {
+        show_message_invalid_input($obj);
+    }
+}
+
 
 function cx_shuffle($str){
     $str_rev = strrev($str) ; //Reverse the string.

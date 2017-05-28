@@ -78,11 +78,11 @@
 
                         <div class="row cx_form_submit_footer">
                             <div class="col-md-6">
-                                <a href="#"
+                                <a href="<?php echo site_url('Customer/update_customer/' . $customer['email'])?>"
                                    class="cx_btn_link_update">Update</a>
                             </div>
                             <div class="col-md-6">
-                                <a href="#"
+                                <a href="<?php echo site_url('Customer/delete_customer/' . $customer['email'])?>"
                                    class="cx_btn_link_delete">Delete</a>
                             </div>
                         </div>

@@ -41,11 +41,11 @@
             <div class="col-md-3">
                 <?php echo $employee['email']; ?>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <?php echo $employee['privilege']; ?>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a href="<?php echo site_url('Employee/view_employee/' . $employee['employee_name'])?>" class="cx_btn_link_view_sm">view</a>
                 <a href="<?php echo site_url('Employee/update_employee/' . $employee['employee_name'])?>" class="cx_btn_link_update_sm">update</a>
                 <a href="<?php echo site_url('Employee/delete_employee/' . $employee['employee_name']) ?>" class="cx_btn_link_delete_sm">delete</a>

@@ -61,11 +61,12 @@ a{
       background-color: $colorGeneral;
     }
   }
+
   #cx_nav{
     li{
       margin:0 2px;
       a{
-        padding:5px;
+        padding:10px 5px;
       }
     }
   }
@@ -148,10 +149,10 @@ a{
     }
     .cx_function_box_content{
       position: relative;
-      min-height:250px;
+      min-height:300px;
       background-color: $bgGeneral;
       padding:5px;
-      .row{
+      .row, [class*="col-"]{
         margin-bottom:5px;
       }
       .cx_function_box_img{
@@ -177,22 +178,6 @@ a{
   .cx_function_box_customer{
     .cx_function_box_title{
       background-color: $colorA;
-    }
-    .cx_view_recent_col{
-      #view_recent_select{
-        width:100px;
-      }
-      #view_recent_input{
-        width:70px;
-      }
-    }
-    .cx_search_customer_row{
-      #search_customer_input{
-        width:100%;
-      }
-      #search_customer_select{
-        width:100%;
-      }
     }
   }
 

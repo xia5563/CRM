@@ -1,4 +1,5 @@
 @media only screen and (max-width:991px){
+
   .cx_overview_boxes{
     .cx_overview_box{
       width:90%;
@@ -14,6 +15,9 @@
           margin-left:auto;
           margin-right:auto;
         }
+      }
+      [class*="cx_btn"], input, select{
+        width:150px;
       }
 
     }

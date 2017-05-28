@@ -31,7 +31,6 @@
   text-decoration: none;
   text-align: center;
   min-width:80px;
-  max-width:300px;
   background-color: $bg_color;
   color: $color;
   border:none;
@@ -93,6 +92,7 @@
     .cx_message_content_btns{
       position: absolute;
       bottom:2px;
+
     }
   }
 }

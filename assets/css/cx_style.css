@@ -3,7 +3,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #333399;
   color: white;
   border: none;
@@ -23,7 +22,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #333399;
   color: white;
   border: none;
@@ -43,7 +41,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #333399;
   color: white;
   border: none;
@@ -63,7 +60,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #25565F;
   color: white;
   border: none;
@@ -83,7 +79,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #395D3B;
   color: white;
   border: none;
@@ -103,7 +98,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #395D3B;
   color: white;
   border: none;
@@ -123,7 +117,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #55353F;
   color: white;
   border: none;
@@ -143,7 +136,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #414141;
   color: white;
   border: none;
@@ -163,7 +155,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #414141;
   color: white;
   border: none;
@@ -183,7 +174,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #4d004d;
   color: white;
   border: none;
@@ -203,7 +193,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #4d004d;
   color: white;
   border: none;
@@ -223,7 +212,6 @@
   text-decoration: none;
   text-align: center;
   min-width: 80px;
-  max-width: 300px;
   background-color: #193366;
   color: white;
   border: none;
@@ -238,6 +226,63 @@
     color: #193366;
     background-color: white; }
 
+.cx_msg_btn1 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  min-width: 80px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  padding: 2px 5px;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -ms-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s; }
+  .cx_msg_btn1:hover {
+    text-decoration: none;
+    color: #4d004d;
+    background-color: white; }
+
+.cx_msg_btn2 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  min-width: 80px;
+  background-color: #193366;
+  color: white;
+  border: none;
+  padding: 2px 5px;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -ms-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s; }
+  .cx_msg_btn2:hover {
+    text-decoration: none;
+    color: #193366;
+    background-color: white; }
+
+.cx_msg_btn3 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  min-width: 80px;
+  background-color: #663300;
+  color: white;
+  border: none;
+  padding: 2px 5px;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -ms-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s; }
+  .cx_msg_btn3:hover {
+    text-decoration: none;
+    color: #663300;
+    background-color: white; }
+
 .cx_body {
   background: #262626; }
 
@@ -249,7 +294,7 @@
   margin: 50px auto; }
 
 .cx_layout_group_a {
-  border: 1px solid rgba(153, 102, 51, 0.2);
+  border: 1px solid #996633;
   margin-bottom: 20px;
   padding: 5px; }
 
@@ -299,7 +344,7 @@ a {
   .cx_navbar #cx_nav li {
     margin: 0 2px; }
     .cx_navbar #cx_nav li a {
-      padding: 5px; }
+      padding: 10px 5px; }
   .cx_navbar .dropdown-menu {
     background-color: rgba(211, 211, 211, 0.5);
     width: 100%;
@@ -351,10 +396,10 @@ a {
       padding: 5px; }
     .cx_function_boxes .cx_function_box .cx_function_box_content {
       position: relative;
-      min-height: 250px;
+      min-height: 300px;
       background-color: #262626;
       padding: 5px; }
-      .cx_function_boxes .cx_function_box .cx_function_box_content .row {
+      .cx_function_boxes .cx_function_box .cx_function_box_content .row, .cx_function_boxes .cx_function_box .cx_function_box_content [class*="col-"] {
         margin-bottom: 5px; }
       .cx_function_boxes .cx_function_box .cx_function_box_content .cx_function_box_img {
         margin-left: auto;
@@ -370,14 +415,6 @@ a {
         color: white; }
   .cx_function_boxes .cx_function_box_customer .cx_function_box_title {
     background-color: #25565F; }
-  .cx_function_boxes .cx_function_box_customer .cx_view_recent_col #view_recent_select {
-    width: 100px; }
-  .cx_function_boxes .cx_function_box_customer .cx_view_recent_col #view_recent_input {
-    width: 70px; }
-  .cx_function_boxes .cx_function_box_customer .cx_search_customer_row #search_customer_input {
-    width: 100%; }
-  .cx_function_boxes .cx_function_box_customer .cx_search_customer_row #search_customer_select {
-    width: 100%; }
   .cx_function_boxes .cx_function_box_finance .cx_function_box_title {
     background-color: #395D3B; }
   .cx_function_boxes .cx_function_box_employee .cx_function_box_title {
@@ -447,7 +484,19 @@ a {
     text-align: center; }
     .cx_function_boxes .cx_function_box_content [class*="col-"] * {
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto; }
+  .cx_function_boxes .cx_function_box_content [class*="cx_btn"], .cx_function_boxes .cx_function_box_content input, .cx_function_boxes .cx_function_box_content select {
+    width: 150px; } }
+
+@media only screen and (min-width: 992px) {
+  .cx_navbar .navbar-nav {
+    margin-left: 10%; }
+  .cx_navbar #cx_nav li {
+    width: 150px; }
+  .cx_function_boxes .cx_function_box_content input[type="text"] {
+    width: 100%; }
+  .cx_function_boxes .cx_function_box_content input[type="number"] {
+    width: 50px; } }
 
 .cx_loggin_container .cx_loggin {
   text-align: center;

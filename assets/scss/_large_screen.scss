@@ -1,4 +1,24 @@
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
+  .cx_navbar {
+    .navbar-nav{
+      margin-left:10%;
+    }
+    #cx_nav {
+      li {
+        width: 150px;
+      }
+    }
+  }
 
+  .cx_function_boxes {
+    .cx_function_box_content {
+      input[type="text"] {
+        width: 100%;
+      }
+      input[type="number"] {
+        width: 50px;
+      }
+    }
+  }
 }
 

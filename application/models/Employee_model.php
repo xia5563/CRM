@@ -30,10 +30,10 @@ class Employee_model extends Common_model
         return $this->db->affected_rows();
     }
 
-    public function updateEmployee($field, $employee_name, $pwd, $email, $privilege)
+    public function updateEmployee($field,$keyword, $employee_name, $pwd, $email, $privilege)
     {
-        $this->db->where($field, $employee_name)->update($this->tablename,
-            array('password' => $pwd, 'email' => $email, 'privilege' => $privilege));
+        $this->db->where($field, $keyword)->update($this->tablename,
+            array('employee_name'=>$employee_name,'password' => $pwd, 'email' => $email, 'privilege' => $privilege));
         return $this->db->affected_rows();
     }
 

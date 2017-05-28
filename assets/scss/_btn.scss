@@ -35,3 +35,12 @@
 .cx_btn_link_add_csv{
   @include cx_btn_common_parts(inline-block,$colorF);
 }
+.cx_msg_btn1{
+  @include cx_btn_common_parts(inline-block,$colorE,$colorGeneral,2px,5px);
+}
+.cx_msg_btn2{
+  @include cx_btn_common_parts(inline-block,$colorF,$colorGeneral,2px,5px);
+}
+.cx_msg_btn3{
+  @include cx_btn_common_parts(inline-block,$colorG,$colorGeneral,2px,5px);
+}

@@ -11,8 +11,10 @@
 <?php $this->load->view("templates/nav") ?>
 <div class="container">
     <div class="row ">
-        <div class="cx_solo_message">
-            <span> <?php echo isset($title_message)? $title_message: ""; ?> </span>
+        <div class="col-md-12">
+            <div class="cx_solo_message">
+                <span> <?php echo isset($title_message)? $title_message: ""; ?> </span>
+            </div>
         </div>
     </div>
 </div>
@@ -62,8 +64,9 @@
             <div class="col-md-3">
                 <a href="<?php echo site_url('Customer/view_customer/' . $customer['email'])?>"
                    class="cx_btn_link_view_sm">view</a>
-                <a href="#" class="cx_btn_link_update_sm">update</a>
-                <a href="#" class="cx_btn_link_delete_sm">delete</a>
+                <a href="<?php echo site_url('Customer/update_customer/' . $customer['email'])?>"
+                   class="cx_btn_link_update_sm">update</a>
+                <a href="<?php echo site_url('Customer/delete_customer/' . $customer['email'])?>" class="cx_btn_link_delete_sm">delete</a>
             </div>
 
         </div>

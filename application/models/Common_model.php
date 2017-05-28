@@ -1,4 +1,5 @@
 <?php
+//The following are common functions for all models.
 
 class Common_model extends CI_Model
 {

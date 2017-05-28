@@ -56,10 +56,10 @@
                         </div>
                     </div>
                     <div class="row cx_form_submit_footer">
-                        <div class="col-md-6 ">
+                        <div class="col-sm-6 ">
                             <button class="cx_btn_link_add" type="submit">Add</button>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <a href="<?php echo site_url('Employee/employee_login') ?>" class="cx_btn_link_inline">Cancel</a>
                         </div>
                     </div>
